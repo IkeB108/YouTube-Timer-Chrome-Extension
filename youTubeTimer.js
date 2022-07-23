@@ -70,9 +70,13 @@ function getTimeWatched(){
 function initiateTimer(){
   document.addEventListener('keydown', (e)=>{
     if(e.code == 'Equal'){
-      let newTime = prompt("Enter today's time in minutes");
-      if(Number.isInteger(newTime))
-      cookieTimeAtStart = 60 * parseInt(newTime)
+      let newTime = parseFloat (prompt("Enter today's time in minutes") );
+      if(Number.isInteger(newTime)){
+        cookieTimeAtStart = 60 * parseInt(newTime)
+        updateTimer();
+      } else {
+        // alert("Not an integer")
+      }
     }
   } )
   //This function is called 2 seconds after the page loads

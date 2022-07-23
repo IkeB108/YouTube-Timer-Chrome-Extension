@@ -1,6 +1,6 @@
 # YouTube Timer Chrome Extension
 A chrome extension that notifies you when you've reached a certain daily limit for watch time on YouTube. A timer appears above the video.
-This extension is valuable because **it tracks watch time** on videos, so it does not count time spent browsing YouTube, unlike other productivity Chrome extensions.
+This extension is valuable because **it only tracks time while a video is playing**, so it does not simply track all time spent on YouTube, unlike other productivity Chrome extensions.
 ## How to Use
 These instructions are for Windows. It should be similar for other systems.
 1. Download and extract the .zip file (click the green "Code" button in the upper right corner)

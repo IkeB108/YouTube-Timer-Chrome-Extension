@@ -68,7 +68,13 @@ function getTimeWatched(){
 }
 
 function initiateTimer(){
-  document.addEventListener('keydown', (e)=>{ if(e.code == 'Equal')cookieTimeAtStart = 60 * parseInt(prompt("Enter today's time in minutes")) } )
+  document.addEventListener('keydown', (e)=>{
+    if(e.code == 'Equal'){
+      let newTime = prompt("Enter today's time in minutes");
+      if(Number.isInteger(newTime))
+      cookieTimeAtStart = 60 * parseInt(newTime)
+    }
+  } )
   //This function is called 2 seconds after the page loads
   //The last line of code calls this function (see bottom)
   
